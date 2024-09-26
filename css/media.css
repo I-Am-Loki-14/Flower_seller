@@ -1,0 +1,33 @@
+@media (max-width: 1260px) {
+  .navbar .menubar {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar h1 {
+    font-size: 1.7rem;
+  }
+  .navbar .menulinks {
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #ffffff63;
+    width: 100%;
+    /* transform-origin: top left; */
+    transform: translatex(-150%);
+    padding: 10px;
+    z-index: 999;
+    border-radius: 0 0 10px 10px;
+    transition: 0.3s;
+  }
+
+  .navbar .menulinks.show {
+    transform: translatex(0%);
+  }
+  .navbar .menulinks a {
+    display: block;
+    text-align: center;
+    border: 1px solid #999;
+    margin: 3px 0;
+  }
+}
